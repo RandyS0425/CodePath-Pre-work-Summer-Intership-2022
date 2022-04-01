@@ -24,7 +24,10 @@
     <input id = "volumeSlider" type="range" min="1" max="100" value="50" class="slider">
     </div>
 
-    <p id="message2">
+    <p id="timer">
+    <p id= "currentSpeed">
+    <p id= "speed">
+    </p>
       
     </p>                
     <button id="startBtn" onclick = "startGame()">
@@ -33,6 +36,15 @@
     <button id="stopBtn" class = "hidden" onclick = "stopGame()">
       Stop
     </button>
+
+<div class="dropdown">
+  <button class="dropbtn">Speed</button>
+  <div class="dropdown-content">
+    <a href="#" id = "slow">Slow</a>
+    <a href="#" id = "fast">Fast </a>
+    <a href="#" id = "ExtraFast">Extra Fast </a>
+  </div>
+</div>
   
 <!--     <p id = "clock"> Countdown: </p> -->
      <div id="gameButtonArea">
