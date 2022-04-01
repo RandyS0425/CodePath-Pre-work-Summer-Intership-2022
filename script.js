@@ -28,9 +28,9 @@ o.start(0)
 updateMessage();
 
 
- document.getElementById("slow").addEventListener("click", function (){
- speed("slow");
- document.getElementById("currentSpeed").innerHTML = "Current Speed: Slow "
+ document.getElementById("normal").addEventListener("click", function (){
+ speed("normal");
+ document.getElementById("currentSpeed").innerHTML = "Current Speed: Normal "
  });
  document.getElementById("fast").addEventListener("click", function (){
  speed("fast");
@@ -202,7 +202,7 @@ function guess(btn){
   
  function speed(fast) {
     switch(fast){
-      case "slow": clueHoldTime = 1000;
+      case "normal": clueHoldTime = 1000;
                    nextClueWaitTime = 1000;
        break;
       case "fast": clueHoldTime = 500; 
